@@ -53,9 +53,6 @@ public class SwitchService {
             switchOnOffModel.setSwitch1(onOffSwitchRequest.isSwitch1());
             switchOnOffModel.setSwitch2(onOffSwitchRequest.isSwitch2());
             switchOnOffModel.setSwitch3(onOffSwitchRequest.isSwitch3());
-            switchOnOffModel.setSwitch1feedback(false);
-            switchOnOffModel.setSwitch2feedback(false);
-            switchOnOffModel.setSwitch3feedback(false);
 
             switchOnOffRepository.save(switchOnOffModel);
 
@@ -77,6 +74,9 @@ public class SwitchService {
         switchOnOffModel.setSwitch1(false);
         switchOnOffModel.setSwitch2(false);
         switchOnOffModel.setSwitch3(false);
+        switchOnOffModel.setSwitch1feedback(false);
+        switchOnOffModel.setSwitch2feedback(false);
+        switchOnOffModel.setSwitch3feedback(false);
 
         switchOnOffRepository.save(switchOnOffModel);
 
