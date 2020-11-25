@@ -27,4 +27,10 @@ public class SwitchOnOffModel {
     boolean switch2;
 
     boolean switch3;
+
+    boolean switch1feedback;
+
+    boolean switch2feedback;
+
+    boolean switch3feedback;
 }
