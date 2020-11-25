@@ -30,9 +30,9 @@ public class SwitchService {
             onOffSwitchResponse.setSwitch2(switchOnOffModel.isSwitch2());
             onOffSwitchResponse.setSwitch3(switchOnOffModel.isSwitch3());
 
-            switchOnOffModel.setSwitch1feedback(onOffSwitchResponse.isSwitch1());
-            switchOnOffModel.setSwitch2feedback(onOffSwitchResponse.isSwitch2());
-            switchOnOffModel.setSwitch3feedback(onOffSwitchResponse.isSwitch3());
+            switchOnOffModel.setSwitch1feedback(onOffSwitchStatus.isSwitch1feedback());
+            switchOnOffModel.setSwitch2feedback(onOffSwitchStatus.isSwitch2feedback());
+            switchOnOffModel.setSwitch3feedback(onOffSwitchStatus.isSwitch3feedback());
 
             switchOnOffRepository.save(switchOnOffModel);
 
